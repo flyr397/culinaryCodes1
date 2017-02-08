@@ -43,32 +43,8 @@ li.dropdown {
     text-align: left;
 }
 
-
 .dropdown-content a:hover {background-color: #77738c}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-.mid {
- font:bold;
- font-size:30px;
-
-
-
-}
-
-#footer {
-    position: fixed;
-    left:0px;
-    bottom: 0px;
-    height: 35px;
-    width: 100%;
-    Background:0;
-}
-
-
-
-
-
-
