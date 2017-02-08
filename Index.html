@@ -1,39 +1,104 @@
 ﻿
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title> Classy Fine Wine and Dine</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style/menu.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Classy Fine Wine and Dine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/menu.css">
+ 
+    <script type="text/javascript">
+              function displayNextImage() {
+                  x = (x === images.length - 1) ? 0 : x + 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function displayPreviousImage() {
+                  x = (x <= 0) ? images.length - 1 : x - 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function startTimer() {
+                  setInterval(displayNextImage, 5000);
+              }
+
+              var images = [], x = -1;
+              images[0] = "pics/Spandbeetsalad.jpg";
+              images[1] = "http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2015/08/Carmen-Gran-Reserva-Semillon-sample.png";
+              images[2] = "pics/SteamedMussels.jpg";
+              images[3] = "pics/quiche.jpg";
+    </script>
+
+</head>
+
+<!--part of javascript for image scroll-->
+<body onload="startTimer()">
 
     <ul>
       <li><a href="index.html">Home</a></li>
-  <li><a href="index.html">  Appetizers  </a></li>
+  <li><a href="appetizers.html">  Appetizers  </a></li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"> Main Courses </a>
         <div class="dropdown-content">
-          <a href="#"> Beef </a>
-          <a href="#"> Chicken </a>
-          <a href="#"> Seafood </a>
+          <a href="beef.html"> Beef </a>
+          <a href="chicken.html"> Chicken </a>
+          <a href="seafood.html"> Seafood </a>
         </div>
       </li>
 
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn"> Wine </a>
-        <div class="dropdown-content">
-          <a href="RedWine.html"> Red & White Wine </a>
-          <a href="Beer.html">  Beers </a>
-        </div>
-      </li>
-    <li><a href="deserts.html">  Deserts </a></li>
-      <li><a href="contact.html">  Contact Us </a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"> Spirits </a>
+            <div class="dropdown-content">
+                <a href="RedWine.html"> Red & White Wine </a>
+                <a href="Beer.html">  Beers </a>
+            </div>
+        </li>
+        <li><a href="deserts.html">  Desserts </a></li>
+        <li><a href="contact.html">  Contact Us </a></li>
     </ul>
 
-    <h3>   The Home Page is where the heart is!!! </h3>
-    <p>  There's No Place Like Home!!!  </p>
-    <p>  Remember...You Drew First Blood!!!  </p>
+    <!--start script for java image scroll-->
+    <img id="img" src="pics/bwellington.jpg" width=100% height="500" />
 
-    </body>
-    </html>
+    <div>
+        <h3>New American American cuisine.  The best wine selection in Cleveland.</h3>
+        <p>  A perennial winner of accolades and awards, Culinary Coders is known for creative dining and the best wine selection in the region.  Named one of Open Table’s “Best Wine List in the Greater Cleveland area (Sept. 2016),” with the “Best Wine List” in the Ohio region (Open Table, Sept. 2016)  and a “must-visit restaurant” by The Plain Dealer.  Culinary Coders has  reached  to exceed the highest  standards in food, beverage and service every day.  Our premium dinners and elegant ambience attract patrons from throughout Cleveland, Pittsburgh, Summit County and Hamilton County for celebrations, business meetings and private dining events. </p>
+    </div>
+
+    <div class="img">
+        <a target="_blank" href="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-bottles.jpg">
+            <img src="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-bottles.jpg" width="300" height="200">
+        </a>
+        <h4>AWARD-WINNING WINE LIST</h4>
+        <div class="desc">Our wine selections include more than 450 premium bottled wines and 40 wines by the glass.  Special Coravin selections, curated flights and create-your-own flights with our exclusive 1.5, 3 and 5 oz pours.  </div>
+    </div>
+
+    <div class="img">
+        <a target="_blank" href="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-dining-table.jpg">
+            <img src="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-dining-table.jpg" width="300" height="200">
+        </a>
+
+        <h4>PRIVATE DINING</h4>
+        <div class="desc">Culinary Codes offer closed-door private dining spaces for up to 70 guests for parties, receptions, lunch and dinner meetings.</div>
+    </div>
+
+    <div class="img">
+        <a target="_blank" href="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-glasses.jpg">
+            <img src="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-glasses.jpg" width="300" height="200">
+        </a>
+
+        <h4>FROM OUR CELLAR</h4>
+        <div class="desc">Premium and hard-to-find wines from our featured wineries are available for bottle purchase from our cellar.</div>
+    </div>
+
+    <div class="img">
+        <a target="_blank" href="pics/dessert.jpg">
+            <img src="pics/dessert.jpg" width="300" height="200">
+        </a>
+
+        <h4>DELECTABLE DESSERTS</h4>
+        <div class="desc">All of our imaginative desserts are created in-house! Some of our favorites are goat cheese gelato (a different flavor daily), shortbread cookies with lemon curd and figs.</div>
+    </div>
+
+
+</body>
+</html>

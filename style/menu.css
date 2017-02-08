@@ -59,3 +59,15 @@ li.dropdown {
     padding: 50px;
     display: none;
 }
+
+.size {
+    font-size: 18px;
+}
+
+.red {
+   color: red;
+}
+
+.sand {
+    color: #d8a222 ;
+}
