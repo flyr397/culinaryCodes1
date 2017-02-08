@@ -48,3 +48,15 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.size {
+    font-size: 18px;
+}
+
+.red {
+   color: red;
+}
+
+.sand {
+    color: #d8a222 ;
+}
