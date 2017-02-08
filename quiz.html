@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script>
+var score=0;
+var questions = [
+ ['When was culinaryCoders created?', 2017],
+ ['How many coders make up culinaryCodes?',5],
+ ['Score++is what if score=4 and you run the loop three times?', 7]
+];
+function askQuestion(question) {
+ var answer = prompt(question[0],'');
+    if (answer == question[1]) {
+        alert('Correct!');
+        score++;
+    } else {
+        alert('Sorry. The correct answer is ' + question[1]);
+    }
+}
+for (var i=0; i<questions.length; i++) {
+ askQuestion(questions[i]);
+}
+
+    </script>
+
+    <script>
+		var message = 'You got ' + score;
+		message += ' out of ' + questions.length;
+		message += ' questions correct.';
+		message += ' Congratulations you recieve 20% off your next visit';
+		document.write('<p>' + message + '</p>');
+    </script>
+</body>
+</html>
