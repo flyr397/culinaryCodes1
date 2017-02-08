@@ -27,18 +27,14 @@
                 <a href="Beer.html">  Beers </a>
             </div>
         </li>
-        <li><a href="desserts.html">  Desserts  </a></li>
+        <li><a href="deserts.html">  Deserts  </a></li>
         <li><a href="contact.html">  Contact Us </a></li>
 
     </ul>
 
-    <p class="mid">
-
-        Contact information <br /> * 216.555.5555 *<br />  9043 Woodland Ave, Cleveland, OH 44115 <br /> We await your company.<br /> 
-
-        Please call ahead for reservations to ensure your table!!!
-    </p>
-<p><center>Come join us at Culinary Coders. Where the atmosphere is right on the number!!!</center></p>
+    <h3>Contact information <br /> * 216.555.5555 *<br />  9043 Woodland Ave, Cleveland, OH 44115 <br />* We await your company!</h3>
+    <h3>Please call ahead for reservations to ensure your table!!! </h3>
+    <p><center>Come join us at Culinary Coders. Where the atmosphere is right on the number!!!</center></p>
     <p><center> When the food is good...please come back if you could!!!</center></p>
 
 
@@ -48,19 +44,9 @@
         "Their Story"
     </p>
 
-   
+    <p class=""
 
-       <p class="big">
-
-
-
-
-       </p>
-
-
-
-
-
+    </p>
     <div>
         <p>
             <center>
@@ -81,11 +67,11 @@
     </p>
 
     <p><center> We will serve no wine...before its time!!!</center></p>
-    <p><center> When the dish is good...please join us if you would!!!  </center></p>
+    <p><center> If the dish is good...then we did it right!!!  </center></p>
 
     <p>
         <center>
-            Thank you for dining with us, whether it was<br /> in our establishment, or if you<br /> took time out of your busy schedule
+            Thank you for dining with us, whether it was<br /> in our establishment, or if you even<br /> took time out of your busy schedul
             to just pick something <br />up on the go. We thank you for visit your business.
         </center>
     </p>

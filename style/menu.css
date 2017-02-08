@@ -75,9 +75,16 @@ li.dropdown {
  font:bold;
  font-size:30px;
 
+}
 
+
+.big {
+    font:increase;
+    font-size:20px; 
 
 }
+
+
 
 #footer {
     position: fixed;
@@ -87,6 +94,7 @@ li.dropdown {
     width: 100%;
     Background:0;
 }
+
         p {
             text-align: center;
         }
