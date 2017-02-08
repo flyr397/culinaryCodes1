@@ -5,8 +5,29 @@
   <title> Red Wine Page </title>
 
     <link rel="stylesheet" href="style/menu.css">
+    <script type="text/javascript">
+              function displayNextImage() {
+                  x = (x === images.length - 1) ? 0 : x + 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function displayPreviousImage() {
+                  x = (x <= 0) ? images.length - 1 : x - 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function startTimer() {
+                  setInterval(displayNextImage, 5000);
+              }
+
+              var images = [], x = -1;
+              images[0] = "pics/Chardonnay.jpg";
+              images[1] = "pics/Sauvignon.jpg";
+              images[2] = "pics/wineHUD.jpg";
+              
+    </script>
 </head>
-<body>
+<body onload="startTimer()">
 
 <ul>
     <li><a href="index.html">Home</a></li>
@@ -27,15 +48,15 @@
       <a href="beer.html">  Beers </a>
     </div>
   </li>
-  <li><a href="deserts.html">  Deserts </a></li>
+  <li><a href="deserts.html">  Desserts </a></li>
   <li><a href="contact.html">  Contact Us </a></li>
 </ul>
 
-<h3>  Bloody Wine is Delicious!!!! </h3>
-<p>  We will serve no wine...before its time!!!   </p>
-<p>  If the dish is good...then it must be a miracle!!!  </p>
+    <!--start script for java image scroll-->
+    <img id="img" src="pics/redwhitewinesocial.jpg" width=100% height="500" />
 
     <h1 class="sand"> White Wines </h1>
+    <p class="size">ClevelandCodes has wine list showcases of over 450 selections of premium, rare, boutique and vintage wines. <br /><br /> Please see below for a few of our offerings...</p>
 
     <p class="size">
         Winemaker's Notes : <br>

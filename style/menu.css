@@ -71,30 +71,3 @@ li.dropdown {
 .sand {
     color: #d8a222 ;
 }
-.mid {
- font:bold;
- font-size:30px;
-
-}
-
-
-.big {
-    font:increase;
-    font-size:20px; 
-
-}
-
-
-
-#footer {
-    position: fixed;
-    left:0px;
-    bottom: 0px;
-    height: 35px;
-    width: 100%;
-    Background:0;
-}
-
-        p {
-            text-align: center;
-        }
