@@ -47,4 +47,22 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+
 }
+
+#footer {
+    position: fixed;
+    left: 600px;
+    bottom: 0px;
+    height: 35px;
+    width: 100%;
+    Background:0;
+}
+
+.middle {
+    left:400px;
+
+
+
+}
+
