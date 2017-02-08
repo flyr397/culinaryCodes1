@@ -5,8 +5,29 @@
         <title> Classy Fine Wine and Dine</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/menu.css">
+       <script type="text/javascript">
+              function displayNextImage() {
+                  x = (x === images.length - 1) ? 0 : x + 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function displayPreviousImage() {
+                  x = (x <= 0) ? images.length - 1 : x - 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function startTimer() {
+                  setInterval(displayNextImage, 5000);
+              }
+
+              var images = [], x = -1;
+              images[0] = "http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2015/08/Carmen-Gran-Reserva-Semillon-sample.png";
+              images[1] = "https://recessindy.com/images/2012/03/front-image3.jpg";
+              images[2] = "http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2015/08/Carmen-Gran-Reserva-Semillon-sample.png";
+        </script>
+
     </head>
-    <body>
+    <body  onload="startTimer()">
 
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -31,9 +52,40 @@
       <li><a href="contact.html">  Contact Us </a></li>
     </ul>
 
-    <h3>   The Home Page is where the heart is!!! </h3>
-    <p>  There's No Place Like Home!!!  </p>
-    <p>  Remember...You Drew First Blood!!!  </p>
+  
 
+         <img id="img" src="http://archive.jsonline.com/images.ashx?file=mjs-deptola10p4(2).jpg&resize=" width=100% height="500" />
+        <h3>New American American cuisine.  The best wine selection in Cleveland.</h3>
+        <p>  A perennial winner of accolades and awards, Culinary Coders is known for creative dining and the best wine selection in the region.  Named one of Open Table’s “Best Wine List in the Greater Cleveland are (Sept. 2016),” with the “Best Wine List” in the Ohio region (Open Table, Sept. 2016)  and a “must-visit restaurant” by The News Journal, Culinary Coders has  reached  to exceed the highest  standards in food, beverage and service every day. Our premium dinners and elegant ambience attract patrons from throughout Cleveland, Pittsburgh, Summit County and Hamilton County for celebrations, business meetings and private dining events. </p>
+
+
+        <div class="img">
+            <a target="_blank" href="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-bottles.jpg">
+                <img src="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-bottles.jpg" width="260" height="170">
+            </a>
+            <h4>AWARD-WINNING WINE LIST</h4>
+            <div class="desc">Our wine selections include more than 450 premium bottled wines, 40 wines by the glass.  Special Coravin selections, curated flights and create-your-own flights with our exclusive 1.5, 3 and 5 oz pours.  </div>
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-dining-table.jpg">
+                <img src="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-dining-table.jpg" alt="Forest" width="300" height="200">
+            </a>
+
+            <h4>PRIVATE DINING</h4>
+            <div class="desc">Culinary Codes offer closed-door private dining spaces for up to 70 guests for parties, receptions, lunch and dinner meetings.</div>
+        </div>
+
+        <div class="img">
+            <a target="_blank" href="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-glasses.jpg">
+               <img src="http://www.domainehudson.com/wp-content/uploads/2015/06/quicklink-wine-glasses.jpg" alt="Northern Lights" width="300" height="200">
+            </a>
+
+            <h4>FROM OUR CELLAR</h4>
+            <div class="desc">Premium and hard-to-find wines from our featured wineries are available for bottle purchase from our cellar.</div>
+        </div>
+     
+    
+    
     </body>
     </html>
