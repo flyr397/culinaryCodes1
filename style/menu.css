@@ -71,12 +71,24 @@ li.dropdown {
 
 .size {
     font-size: 18px;
+
 }
 
 .red {
    color: red;
+    text-align: center;
 }
 
 .sand {
     color: #d8a222 ;
+     text-align: center;
 }
+
+.mid{
+    font-size:30px;
+     text-align: center;
+
+}
+
+
+

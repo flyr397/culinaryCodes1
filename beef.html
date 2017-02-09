@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,9 +19,10 @@
                   setInterval(displayNextImage, 5000);
               }
               var images = [], x = -1;
-              images[0] = "pics/Spandbeetsalad.jpg";
+              images[0] = "pics/beef.jpg";
               images[1] = "http://www.thedrinksbusiness.com/wordpress/wp-content/uploads/2015/08/Carmen-Gran-Reserva-Semillon-sample.png";
-              images[2] = "pics/SteamedMussels.jpg";
+              images[2] = "pics/beef1.jpg";
+              images[3] = 'pics/kbeef.jpg';
     </script>
     <script>
 
@@ -41,25 +40,22 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="appetizers.html">  Appetizers  </a></li>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn"> Main Courses </a>
-            <div class="dropdown-content">
-                <a href="beef.html"> Beef </a>
-                <a href="chicken.html"> Chicken </a>
-                <a href="seafood.html"> Seafood </a>
+            <a href="seafood.html"> Main Courses </a>
+
             </div>
         </li>
 
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn"> Wine </a>
+            <a href="javascript:void(0)" class="dropbtn"> Spirits </a>
             <div class="dropdown-content">
                 <a href="RedWine.html"> Red & White Wine </a>
                 <a href="Beer.html">  Beers </a>
             </div>
         </li>
-        <li><a href="deserts.html">  Deserts </a></li>
+        <li><a href="deserts.html">  Desserts </a></li>
         <li><a href="contact.html">  Contact Us </a></li>
     </ul>
-    <img id="img" src="pics/bwellington.jpg" width=100% height="500" />
+    <img id="img" src="pics/bwellington.jpg" width="100%" height="440" />
 
     <div class="content">
         <div class="main">
@@ -69,73 +65,65 @@
                     <li><a href="chicken.html">Chicken</a></li>
                     <li><a href="seafood.html">  Seafood  </a></li>
                     <li><a href="beef.html">Beef</a></li>
+            </div>
+            </ul>
+
+            <section class="menu-panel">
+                <h2>Featured Items</h2>
+                <p class="adorn-brdr-btm menu-time">…</p>
+
+                <h4><span>Kobe Certified beef</span></h4>
+                <ul class="menu-items">
+                    <li>
+                        <strong>Local Beef</strong>
+                        <span class="descript">Our butcher hand craves all of our beef then delivers it the morning before we open. So our beef is fresh never frozen.</span>
+                    </li>
+
+                    <li>
+                        <strong>Pairings</strong>
+                        <span class="descript">either a house salad, mashed potatoes, or sweet potatoe chips. You can subsitute for an appestizer just ask your server.</span>
+                    </li>
                 </ul>
 
-                <section class="menu-panel">
-                    <h2>Featured Items</h2>
-                    <div>
-                        <ul class="menu-items">
-                            <li class="featured">
-                                <strong>The CSS: </strong>
-                                <span class="descript">The Java Strip: Coffee-crusted 8 oz. NY Strip Steak</span>
-                                
-                            </li>
-                            <li class="featured">
-                                <strong>HTML</strong>
-                                <span class="descript"\n>Ham, Tomatoes, Mozzarella & Lettuce</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="adorn-brdr-btm menu-time">
-                    </p>
-                    <br />
-                    <h4><span>First Course</span></h4>
-                    <ul class="menu-items">
+            </section>
+            <div id='flip'>
+                <h4><span>Beef</span></h4>
+                <p class="tasting-intro"> <span>All of our beef is grass feed hormone and antibotic free, providing you with some of the best and juicest cuts this side of the cuyahoga. Not to mention its from our local farm.</span></p>
+                <div id='panel'>
+                    <ul class="tasting-options">
                         <li>
-                            <strong>Ignacio</strong>
-                            <span class="descript">Black Beans, Tomato, Queso Mixto, Jalapeño, Chile De Arbol, Radish  </span>
+                            <h5>Center-Cut Filet Mignon—$39.50</h5>
+                            <p>Freshed cut grass feed beef, cut night before</p>
                         </li>
                         <li>
-                            <strong>Traditional Cheese</strong>
-                            <span class="descript">Cotija Cheese, House Made Tortilla Chips </span>
+                            <h5>Porterhouse—$37.50</h5>
+                            <p>Freshed cut grass feed beef, cut the night before</p>
                         </li>
-                    </ul>
-
-                </section>
-                <div id='flip'>
-                    <h4><span>Beef</span></h4>
-                    <p class="tasting-intro"> <span>Our tasting menus include 3 courses (about 3 plates per course) & dessert uniquely hand-selected by our Chef.</span></p>
-                    <div id='panel'>
-                        <ul class="tasting-options">
-                            <li>
-                                <h5>Succlent Chicken Parmesan—$22.50</h5>
-                                <p>Try our hand carved chicken breast topped with aged, freshly grated parmesan</p>
-                            </li>
-                            <li>
-                                <h5>Pan Roasted Chicken Breast—$17.50</h5>
-                                <p>Fresh farm picked chicken carved upon order roasted with seven herbs and spices to give you a deep tasty flavor</p>
-                            </li>
-                            <li>
-                                <h5>Green Circle Farms Chicken Roulade-$28.50</h5>
-                                <p>miso glazed purple sweet potatoes, peanut-maple vinaigrette, roasted chicken jus, sesame</p>
-                            </li>
-                            <li>
-                                <h5>Creamy Bacon Wrapped Chicken-$23.50</h5>
-                                <p>fresh cream rolled in six slices of apple hickory smoked bacon</p>
-                            </li>
-                            <li>
-                                <h5>Duck Confit-$29.50</h5>
-                                <p>duck liver 'scrapple',apple,leek mustard, cherry</p>
-                            </li>
-                            <li>
-                                <h5>Miso Glazed Chicken Breast—$20.50</h5>
-                                <p>miso glazed chicken, freshly grated ginger rubbed with a sugar brothand baked to till tender</p>
-                            </li>
-                        </ul>
-                    </div>
+                        <li>
+                            <h5>Signature Cut Prime New York-$38.50</h5>
+                            <p>Freshed cut grass feed beef, cut the night before</p>
+                        </li>
+                        <li>
+                            <h5>Rack of lamp-$23.50</h5>
+                            <p>fresh butchered lamb from our local farm</p>
+                        </li>
+                        <li>
+                            <h5>Bone-In Veal Chop-$39.50</h5>
+                            <p>Freash chops form our farm straight from the butcher to your plate</p>
+                        </li>
+                        <li>
+                            <h5>Cajun Ribeye Steak—$36.50</h5>
+                            <p>Fresh steak marinated for thirteen hours in a blend of cajun spices</p>
+                        </li>
+                        <p></p>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <footer id="footer">
+        <b> 2017 Copyright Design and Development by <u>clevelandCoders Inc.</u></b>
+
+    </footer>
 </body>
 </html>

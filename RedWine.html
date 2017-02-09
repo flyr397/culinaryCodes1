@@ -5,8 +5,41 @@
   <title> Red Wine Page </title>
 
     <link rel="stylesheet" href="style/menu.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/menu.css">
+    <script src="javaScript/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+              function displayNextImage() {
+                  x = (x === images.length - 1) ? 0 : x + 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function displayPreviousImage() {
+                  x = (x <= 0) ? images.length - 1 : x - 1;
+                  document.getElementById("img").src = images[x];
+              }
+
+              function startTimer() {
+                  setInterval(displayNextImage, 5000);
+              }
+
+              var images = [], x = -1;
+              images[0] = "pics/Chardonnay.jpg";
+              images[1] = "pics/Sauvignon.jpg";
+              images[2] = "pics/wineHUD.jpg";
+              
+    </script>
 </head>
-<body>
+<body onload="startTimer()">
 
 <ul>
     <li><a href="index.html">Home</a></li>
@@ -27,63 +60,89 @@
       <a href="beer.html">  Beers </a>
     </div>
   </li>
-  <li><a href="deserts.html">  Deserts </a></li>
+  <li><a href="deserts.html">  Desserts </a></li>
   <li><a href="contact.html">  Contact Us </a></li>
 </ul>
 
-<h3>  Bloody Wine is Delicious!!!! </h3>
-<p>  We will serve no wine...before its time!!!   </p>
-<p>  If the dish is good...then it must be a miracle!!!  </p>
-
-    <h1 class="sand"> White Wines </h1>
-
-    <p class="size">
-        Winemaker's Notes : <br>
-        Luminous gold with glimmers of pale green,
-        the 2014 Wayfarer Chardonnay <br> booms with aromas of Meyer lemon,
-        apricot blossom and heirloom apple,<br> echoed by notes of lemongrass,
-        honeysuckle and butterscotch. <br> Generous flavors of sun-warmed
-        white peach and crushed almond extend <br> long and wide on the palate  with
-        a stunning underscore of wet stone <br>minerality. The mouthfeel offers both
-        intricacy and wholeness, <br> it is soft and succulent, yet focused with
-        sublime acidity. <br> A stunning wine to enjoy in its youth, it will <br> age
-        beautifully for another 10-15 years. <br> $85
-    </p>
-
-    <p class="size">
-        Winemaker's Notes : <br>
-        Ravenswood Old Hill Ranch Zinfandel 2007 Sonoma's first <br> famous Zinfandel,
-        made in 1862 by William Hill, was grown <br> in this vineyard.
-        These vines-probably Sonoma's oldes-turn out  <br>remarkable wines.
-        Old Hill Vineyard contains 14 different varieties, <br> blended to
-        be 75% Zinfandel. It has Rhone-like intensity with <br> striking precise aromas
-        of blackberry, black pepper, <br> vanilla, coffee, smoke, and mint. <br> $99
+    <!--start script for java image scroll-->
+    <img id="img" src="pics/redwhitewinesocial.jpg" width=100% height="500" />
         
-        <h1 class="red">    Red Wines </h1>
-        
-    <p class="size">
-        Winemaker's Notes : <br>
-        Duckhorn Three Palms Merlot 2013. The 2013 growing season <br>
-        yielded a riveting expression of Three Palms Vineyard Merlot,
-        with a rich <br> entry and pure and polished flavors of cherry,
-        cassis, pomegranate, and <br> blackberry. On the palate, these
-        gorgeous fruit elements mingle with complex <br> layers of leather,
-        wet river rock, eucalyptus and black tea. Warm earthy notes finesse
-        the finish while dense, fine-grained tannins provide wonderful length. <br> $89
-    </p>
+        <center>
+            <h1 class="sand"> White Wines </h1>
 
-    <p class="size">
-        Winemaker's Notes : <br>
-        Our 2012 Alexander Valley Cabernet Sauvignon <br>
-        is a lively and full-bodied expression of Alexander <br>
-        Valley Cabernet Sauvignon from an exceptional vintage. <br>
-        It has a lovely garnet color and opens with aromas of black currant,
-        orange zest and raspberry. These aromas are framed by nuanced notes of
-        vanilla, marshmallow and cocoa, eliciting an effect reminiscent of
-        chocolate-covered berries. The attack is rich and gives way to a mid-palate
-        with breadth and depth, supported with refreshing acidity and integrated,
-        dusty tannins. This wine has power with an unusual vitality and
-        structural balance. Given proper cellar conditions,
-        this wine will provide drinking pleasure through 2034. <br> $75
+            <p class="size">
+                ClevelandCodes has wine list showcases of over 450 selections of premium, rare, boutique and vintage wines. <br />
+                <br /> Please see below for a few of our offerings...
+            </p>
+        </center>
+
+    <div class="container">
+
+        <div class="row" style="text-align: center;">
+            <div class="col-md-6" style="background-color:#d8c9a6;"> 	<h3>   Winemaker's Notes : <br>	</h3> </div>
+            <div class="col-md-6" style="background-color:lightblue;">  <h3>    Winemaker's Notes : <br>  </h3>  </div>
+
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="col-md-6">
+                <h3>
+                    Luminous gold with glimmers of pale green,
+                    the 2014 Wayfarer Chardonnay <br> booms with aromas of Meyer lemon,
+                    apricot blossom and heirloom apple,<br> echoed by notes of lemongrass,
+                    honeysuckle and butterscotch. <br> Generous flavors of sun-warmed
+                    white peach and crushed almond extend <br> long and wide on the palate  with
+                    a stunning underscore of wet stone <br>minerality. The mouthfeel offers both
+                    intricacy and wholeness, <br> it is soft and succulent, yet focused with
+                    sublime acidity. <br> A stunning wine to enjoy in its youth, it will <br> age
+                    beautifully for another 10-15 years. <br> $85
+                </h3>
+            </div>
+
+            <div class="col-md-6">
+                <h3>
+                    Ravenswood Old Hill Ranch Zinfandel 2007 Sonoma's first <br> famous Zinfandel,
+                    made in 1862 by William Hill, was grown <br> in this vineyard.
+                    These vines-probably Sonoma's oldes-turn out  <br>remarkable wines.
+                    Old Hill Vineyard contains 14 different varieties, <br> blended to
+                    be 75% Zinfandel. It has Rhone-like intensity with <br> striking precise aromas
+                    of blackberry, black pepper, <br> vanilla, coffee, smoke, and mint. <br> $99
+                </h3>
+                
+            </div>
+        </div>
+        
+          <center>  <h1 class="red">    Red Wines </h1>   </center>
+
+        <div class="row" style="text-align: center;">
+            <div class="col-md-6">
+                <h3>   Winemaker's Notes : <br>
+                    Duckhorn Three Palms Merlot 2013. The 2013 growing season <br>
+                    yielded a riveting expression of Three Palms Vineyard Merlot,
+                    with a rich <br> entry and pure and polished flavors of cherry,
+                    cassis, pomegranate, and <br> blackberry. On the palate, these
+                    gorgeous fruit elements mingle with complex <br> layers of leather,
+                    wet river rock, eucalyptus and black tea. Warm earthy notes finesse
+                    the finish while dense, fine-grained tannins provide wonderful length. <br> $89
+                </h3>
+            </div>
+        </div>
+
+        <p class="size">
+            Winemaker's Notes : <br>
+            Our 2012 Alexander Valley Cabernet Sauvignon <br>
+            is a lively and full-bodied expression of Alexander <br>
+            Valley Cabernet Sauvignon from an exceptional vintage. <br>
+            It has a lovely garnet color and opens with aromas of black currant,
+            orange zest and raspberry. These aromas are framed by nuanced notes of
+            vanilla, marshmallow and cocoa, eliciting an effect reminiscent of
+            chocolate-covered berries. The attack is rich and gives way to a mid-palate
+            with breadth and depth, supported with refreshing acidity and integrated,
+            dusty tannins. This wine has power with an unusual vitality and
+            structural balance. Given proper cellar conditions,
+            this wine will provide drinking pleasure through 2034. <br> $75
+
+    </div>  <!--class container closing tag-->
+            
 </body>
 </html>
