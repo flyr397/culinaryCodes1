@@ -91,4 +91,12 @@ li.dropdown {
 }
 
 
+#footer {
+    position: fixed;
+    left:0px;
+    bottom: 0px;
+    height: 35px;
+    width: 100%;
+    Background:0;
+}
 
