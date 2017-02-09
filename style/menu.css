@@ -1,3 +1,12 @@
+ul.featured {
+    background-color: transparent;
+}
+
+li.featured {
+    list-style-type: disc;
+    float: left;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
