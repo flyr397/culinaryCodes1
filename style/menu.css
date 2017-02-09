@@ -103,4 +103,11 @@ li.dropdown {
     width: 100%;
     Background:0;
 }
+#red {
+    color: 2B2B2B;
+}
 
+.big {
+    font-size: 25px;
+    text-align: center;
+}
